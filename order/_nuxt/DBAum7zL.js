@@ -1,0 +1,1 @@
+const r=/^\d+(?:[.,]\d+)?(?:\s*[/×x*]\s*\d+(?:[.,]\d+)?)*(?:\s*(?:г|гр|g|кг|kg|мл|ml|л|l|шт|pcs|oz|lb|ун|фунт))?$/i;function e(t,i){if(typeof t!="number"||!Number.isFinite(t)||t<=0)return"";const n=i?.trim();return n?`${t} ${n}`:""}function s(t){const i=t?.trim();return i?r.test(i):!1}export{e as f,s as i};
